@@ -31,7 +31,7 @@ Thumbs.db
 # Laravel Mix
 /public/hot
 /public/mix-manifest.json
-
+/public/build
 # PHPUnit
 .phpunit.cache
 
