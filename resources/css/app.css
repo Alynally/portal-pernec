@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind Components;
+@tailwind utilities;
+
+body, html, #app, main {
+  background: #121212 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh;
+}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pernec
+    container_name: pernec-prod
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    env_file:
+      - ./.env
