@@ -21,6 +21,7 @@
     "primevue": "^3.51.0",
     "sweetalert2": "^11.11.0",
     "vue": "^3.2.13",
+    "vue-demi": "^0.14.10",
     "vue3-marquee": "^4.2.2",
     "vue3-marquee-slider": "^1.0.5"
   },
