@@ -60,8 +60,8 @@
   background: #121212;
   border-radius: 8px;
   padding: 48px 32px;
-  width: 100%;
-  margin: 0;
+  width: calc(100% - 40px);
+  margin: 20px 20px 40px 20px;
   color: #ffffff;
   box-shadow: none;
   border: none;
@@ -84,7 +84,7 @@
 .cs-image-col {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   min-width: 220px;
 }
@@ -123,6 +123,9 @@
   color: #ffffff;
   text-align: left;
 }
+.section-content p {
+  color: #ffffff;
+}
 .section-content ul,
 .section-content ol {
   margin: 0;
@@ -130,5 +133,19 @@
 }
 .section-content li {
   margin-bottom: 0.5em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+.section-content ul ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.section-content ul ul li {
+  margin-bottom: 0.3em;
+  padding-left: 0.5em;
+}
+.section-content b {
+  color: #ffffff;
+  font-weight: 600;
 }
 </style>

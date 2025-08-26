@@ -1,39 +1,53 @@
 <template>
   <div class="project">
-    <div :class="['zigzag-row', { reverse }]">
-      <div class="zigzag-img">
+    <div class="cs-main-row">
+      <div class="cs-image-col">
         <img src="@/assets/img/blogTwo/nawabs.png" alt="DMSS Nawabs System" />
       </div>
-      <div class="zigzag-text">
-        <h2>Nawabs, Jabatan Pengairan & Saliran (JPS)</h2>
-        <h3>What is NAWABS?</h3>
-        <p>
-          NAWABS stands for the National Water Balance Management System. It is a Malaysian government initiative, specifically under the Water Resources Management and Hydrology Division, Department of Irrigation and Drainage Malaysia (JPS).
-        </p>
-        <h3>Key Capabilities of DMSS</h3>
-        <ul>
-          <li><b>Drought Forecasting (Flow Rate):</b> The system can project river flow rates up to 2 months in advance, aiding in water distribution planning.</li>
-          <li><b>Drought Warning (Flow Rate):</b> The system generates early drought warnings with a 14-day lead time, helping JPS prepare and implement mitigation measures.</li>
-          <li><b>Online Access:</b> All information is provided in real-time for use by JPS at both central and state levels.</li>
-          <li><b>Coverage:</b> DMSS operates these functions for all river basins included in the NAWABS project scope.</li>
-        </ul>
-        <h3>Main Objectives of NAWABS DMSS</h3>
-        <ul>
-          <li><b>Monitor Water Resources:</b> Ensure up-to-date and accurate information on water storage status, river flow rates, and water usage.</li>
-          <li><b>Reduce Disaster Risks:</b> Help detect and provide early warnings for risks such as drought or floods, enabling earlier mitigation actions.</li>
-          <li><b>Efficient Dam Management:</b> Support dam and water control structure operations with real-time data to ensure optimal water distribution.</li>
-          <li><b>Support Agriculture and Aquaculture:</b> Assist the agriculture and aquaculture sectors with forecast information to improve water use efficiency.</li>
-          <li><b>Develop a User-Friendly System:</b> Offer a digital platform that is easy to use for JPS, related agencies, dam managers, and other stakeholders.</li>
-        </ul>
-        <h3>Main Purpose of the Water Balance Model</h3>
-        <ul>
-          <li>Provide a comprehensive water management solution, including:</li>
-          <ul>
-            <li>Real-time data on water availability (sources) and water demand (users).</li>
-            <li>Evaluation of operational options to make the best decisions according to current situations.</li>
-            <li>Forecasting functions to help management plan ahead.</li>
-          </ul>
-        </ul>
+      <div class="cs-sections-col">
+        <div class="big-title">Nawabs, Jabatan Pengairan & Saliran (JPS)</div>
+        <div class="section-row">
+          <div class="section-label">What is NAWABS?</div>
+          <div class="section-content">
+            <p>
+              NAWABS stands for the National Water Balance Management System. It is a Malaysian government initiative, specifically under the Water Resources Management and Hydrology Division, Department of Irrigation and Drainage Malaysia (JPS).
+            </p>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-label">Key Capabilities of DMSS</div>
+          <div class="section-content">
+            <ul>
+              <li><b>Drought Forecasting (Flow Rate):</b> The system can project river flow rates up to 2 months in advance, aiding in water distribution planning.</li>
+              <li><b>Drought Warning (Flow Rate):</b> The system generates early drought warnings with a 14-day lead time, helping JPS prepare and implement mitigation measures.</li>
+              <li><b>Online Access:</b> All information is provided in real-time for use by JPS at both central and state levels.</li>
+              <li><b>Coverage:</b> DMSS operates these functions for all river basins included in the NAWABS project scope.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-label">Main Objectives of NAWABS DMSS</div>
+          <div class="section-content">
+            <ul>
+              <li><b>Monitor Water Resources:</b> Ensure up-to-date and accurate information on water storage status, river flow rates, and water usage.</li>
+              <li><b>Reduce Disaster Risks:</b> Help detect and provide early warnings for risks such as drought or floods, enabling earlier mitigation actions.</li>
+              <li><b>Efficient Dam Management:</b> Support dam and water control structure operations with real-time data to ensure optimal water distribution.</li>
+              <li><b>Support Agriculture and Aquaculture:</b> Assist the agriculture and aquaculture sectors with forecast information to improve water use efficiency.</li>
+              <li><b>Develop a User-Friendly System:</b> Offer a digital platform that is easy to use for JPS, related agencies, dam managers, and other stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="section-label">Main Purpose of the Water Balance Model</div>
+          <div class="section-content">
+            <p>Provide a comprehensive water management solution, including:</p>
+            <ul>
+              <li>Real-time data on water availability (sources) and water demand (users).</li>
+              <li>Evaluation of operational options to make the best decisions according to current situations.</li>
+              <li>Forecasting functions to help management plan ahead.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -50,63 +64,113 @@ defineProps({
 
 <style scoped>
 .project {
-  background-color: #333;
-  margin: 20px;
-  padding: 20px;
+  background: #121212;
   border-radius: 8px;
-  color: #fff;
+  padding: 48px 32px;
+  width: calc(100% - 40px);
+  margin: 20px 20px 40px 20px;
+  color: #ffffff;
+  box-shadow: none;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.zigzag-row {
+.big-title {
+  color: #0bc8d5aa;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.cs-main-row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
+  gap: 56px;
+  align-items: stretch;
+  width: 100%;
 }
-.zigzag-row.reverse {
-  flex-direction: row-reverse;
-}
-.zigzag-img {
-  flex: 1 1 0;
+.cs-image-col {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 220px;
 }
-.zigzag-img img {
-  max-width: 300px;
+.cs-image-col img {
+  max-width: 320px;
   width: 100%;
   border-radius: 8px;
-  background: #111;
-  box-shadow: 0 4px 24px #0008;
-  display: block;
-  margin: 0 auto;
+  object-fit: contain;
 }
-.zigzag-text {
-  flex: 2 1 0;
+.cs-sections-col {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
-h2 {
-  color: #FFD700;
+.section-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1.5rem;
+}
+.section-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.section-label {
+  color: #0bc8d5aa;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  min-width: 180px;
+}
+.section-content {
+  color: #ffffff;
   text-align: left;
 }
-h3 {
-  color: #FFA500;
-  margin-top: 24px;
+.section-content p {
+  color: #ffffff;
 }
-ul, ol {
-  margin-left: 1.5em;
-  margin-bottom: 1em;
+.section-content ul,
+.section-content ol {
+  margin: 0;
+  padding-left: 1.2em;
 }
-li {
+.section-content li {
   margin-bottom: 0.5em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+.section-content ul ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 1.5em;
+}
+.section-content ul ul li {
+  margin-bottom: 0.3em;
+}
+.section-content b {
+  color: #ffffff;
+  font-weight: 600;
 }
 @media (max-width: 900px) {
-  .zigzag-row, .zigzag-row.reverse {
-    flex-direction: column !important;
+  .cs-main-row {
+    flex-direction: column;
     gap: 20px;
   }
-  .zigzag-img img {
+  .cs-image-col img {
     max-width: 100%;
   }
-  h2 {
+  .big-title {
+    text-align: center;
+  }
+  .section-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .section-label {
     text-align: center;
   }
 }
